@@ -17,11 +17,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Mostrar mensaje
-        run: echo "Segunda ejecución: workflow actualizado correctamente"
+        run: echo "Hola, GitHub Actions funciona correctamente"
 
       - name: Mostrar información
         run: |
           echo "Repositorio: $GITHUB_REPOSITORY"
           echo "Rama: $GITHUB_REF_NAME"
           echo "La ejecución se realiza en un runner de GitHub"
-
