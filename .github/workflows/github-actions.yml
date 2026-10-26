@@ -1,0 +1,26 @@
+
+name: Mi primer workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  primer-job:
+    name: Verificar ejecución
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Mostrar mensaje
+        run: echo "Hola, GitHub Actions funciona correctamente"
+
+      - name: Mostrar información
+        run: |
+          echo "Repositorio: $GITHUB_REPOSITORY"
+          echo "Rama: $GITHUB_REF_NAME"
+          echo "La ejecución se realiza en un runner de GitHub"
