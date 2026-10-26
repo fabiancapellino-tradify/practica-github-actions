@@ -24,3 +24,4 @@ jobs:
           echo "Repositorio: $GITHUB_REPOSITORY"
           echo "Rama: $GITHUB_REF_NAME"
           echo "La ejecución se realiza en un runner de GitHub"
+
